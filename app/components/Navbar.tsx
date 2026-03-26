@@ -19,6 +19,16 @@ export default function Navbar() {
             Services
           </Link>
         </li>
+        <li>
+          <Link href="/products" className="text-gray-800 font-medium hover:text-blue-600 transition-colors">
+            Products
+          </Link>
+        </li>
+        <li>
+          <Link href="/contact" className="text-gray-800 font-medium hover:text-blue-600 transition-colors">
+            Contact
+          </Link>
+        </li>
       </ul>
     </nav>
   );
