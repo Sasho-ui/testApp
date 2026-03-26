@@ -2,16 +2,24 @@ import Link from "next/link";
 
 export default function Navbar() {
   return (
-    <nav className="bg-white shadow-md px-8 py-4 flex gap-8">
-      <Link href="/" className="text-gray-800 font-medium hover:text-blue-600 transition-colors">
-        Home
-      </Link>
-      <Link href="/about" className="text-gray-800 font-medium hover:text-blue-600 transition-colors">
-        About
-      </Link>
-      <Link href="/services" className="text-gray-800 font-medium hover:text-blue-600 transition-colors">
-        Services
-      </Link>
+    <nav className="bg-white shadow-md px-8 py-4">
+      <ul className="flex gap-8 list-none m-0 p-0">
+        <li>
+          <Link href="/" className="text-gray-800 font-medium hover:text-blue-600 transition-colors">
+            Home
+          </Link>
+        </li>
+        <li>
+          <Link href="/about" className="text-gray-800 font-medium hover:text-blue-600 transition-colors">
+            About
+          </Link>
+        </li>
+        <li>
+          <Link href="/services" className="text-gray-800 font-medium hover:text-blue-600 transition-colors">
+            Services
+          </Link>
+        </li>
+      </ul>
     </nav>
   );
 }
